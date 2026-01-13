@@ -23,6 +23,7 @@ export const CATEGORIES = [
         icon: Sprout,
         description: "High-yield varieties for cotton, paddy, and chilli.",
         color: "bg-emerald-100 text-emerald-700",
+        price: 500,
     },
     {
         id: "fertilizers",
@@ -30,6 +31,7 @@ export const CATEGORIES = [
         icon: Leaf,
         description: "Balanced nutrition including Urea, DAP, and Potash.",
         color: "bg-lime-100 text-lime-700",
+        price: 1200,
     },
     {
         id: "protection",
@@ -37,6 +39,7 @@ export const CATEGORIES = [
         icon: Bug,
         description: "Curative and preventive solutions for pests.",
         color: "bg-rose-100 text-rose-700",
+        price: 850,
     },
     {
         id: "irrigation",
@@ -44,6 +47,7 @@ export const CATEGORIES = [
         icon: Droplets,
         description: "Efficient water management systems and parts.",
         color: "bg-sky-100 text-sky-700",
+        price: 15000,
     },
     {
         id: "soil",
@@ -51,6 +55,7 @@ export const CATEGORIES = [
         icon: FlaskConical,
         description: "Testing kits and micronutrient correctors.",
         color: "bg-amber-100 text-amber-700",
+        price: 300,
     },
     {
         id: "tools",
@@ -58,6 +63,7 @@ export const CATEGORIES = [
         icon: Tractor,
         description: "Essential sprayers and manual tools.",
         color: "bg-slate-100 text-slate-700",
+        price: 2500,
     },
 ];
 

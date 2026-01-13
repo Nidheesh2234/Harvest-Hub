@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { CATEGORIES } from "@/lib/data";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { ProductOrderModal } from "@/components/features/ProductOrderModal";
 
 const container = {
     hidden: { opacity: 0 },
@@ -22,6 +24,14 @@ const item = {
 };
 
 export function ProductCategories() {
+    const [selectedProduct, setSelectedProduct] = useState<any>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleAskPrice = (category: any) => {
+        setSelectedProduct(category);
+        setIsModalOpen(true);
+    };
+
     return (
         <section id="products" className="py-24 bg-background relative overflow-hidden">
             {/* Background blobs */}
@@ -67,7 +77,11 @@ export function ProductCategories() {
                                     <p className="text-muted-foreground mb-6 line-clamp-2">
                                         {category.description}
                                     </p>
-                                    <Button variant="ghost" className="w-full justify-between group-hover:bg-muted/50 rounded-xl">
+                                    <Button
+                                        variant="ghost"
+                                        className="w-full justify-between group-hover:bg-muted/50 rounded-xl"
+                                        onClick={() => handleAskPrice(category)}
+                                    >
                                         Ask Price
                                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </Button>
@@ -77,6 +91,12 @@ export function ProductCategories() {
                     ))}
                 </motion.div>
             </div>
+
+            <ProductOrderModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                product={selectedProduct}
+            />
         </section>
     );
 }
