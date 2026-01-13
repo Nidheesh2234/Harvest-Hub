@@ -1,0 +1,50 @@
+
+> harvest-hub@0.1.0 build
+> next build
+
+⚠ `eslint` configuration in next.config.ts is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.ts options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\email_otvhwar\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+Error: Cannot apply unknown utility class `border-border`
+    [2m[at onInvalidCandidate (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:21:1511)][0m
+    [2m[at Te (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:16:36652)][0m
+    [2m[at C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:21:355][0m
+    [2m[at Rr (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:3:1718)][0m
+    [2m[at _ (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:3:1377)][0m
+    [2m[at $e (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:21:172)][0m
+    [2m[at un (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:38:294)][0m
+    [2m[at async cn (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\tailwindcss\dist\lib.js:38:631)][0m
+    [2m[at async Xr (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\@tailwindcss\node\dist\index.js:10:3417)][0m
+    [2m[at async I (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\@tailwindcss\postcss\dist\index.js:10:3977)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./OneDrive/Desktop/dhellep project/Harvest Hub/app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\app\globals.css:1:1: Cannot apply unknown utility class `border-border`
+    at Input.error (OneDrive/Desktop/dhellep project/Harvest Hub/node_modules/postcss/lib/input.js:135:16) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\1c951_89ae213c._.js:4651:22]
+    at Root.error (OneDrive/Desktop/dhellep project/Harvest Hub/node_modules/postcss/lib/node.js:146:32) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\1c951_89ae213c._.js:928:38]
+    [at Object.Once (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\node_modules\@tailwindcss\postcss\dist\index.js:10:6911)]
+    at async LazyResult.runAsync (OneDrive/Desktop/dhellep project/Harvest Hub/node_modules/postcss/lib/lazy-result.js:293:11) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\1c951_89ae213c._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\[root-of-the-server]__8c62a08b._.js:148:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\[root-of-the-server]__9f1adf0c._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./OneDrive/Desktop/dhellep project/Harvest Hub/app/globals.css [Client Component Browser]
+    ./OneDrive/Desktop/dhellep project/Harvest Hub/app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\[root-of-the-server]__8c62a08b._.js:148:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\build\chunks\[root-of-the-server]__9f1adf0c._.js:443:31])

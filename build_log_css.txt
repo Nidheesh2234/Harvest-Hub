@@ -1,0 +1,35 @@
+
+> harvest-hub@0.1.0 build
+> next build
+
+⚠ `eslint` configuration in next.config.ts is no longer supported. See more info here: https://nextjs.org/docs/app/api-reference/cli/next#next-lint-options
+⚠ Invalid next.config.ts options detected: 
+⚠     Unrecognized key(s) in object: 'eslint'
+⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\email_otvhwar\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.7s
+  Skipping validation of types
+  Collecting page data using 11 workers ...
+  Generating static pages using 11 workers (0/4) ...
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: Too many re-renders. React limits the number of renders to prevent an infinite loop.
+    at <unknown> (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:11:18154)
+    at <unknown> (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:9:11828)
+    at <unknown> (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:9:11222)
+    at j (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:9:10862)
+    at k (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:9:11144)
+    at a (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:9:11815)
+    at o (C:\Users\email_otvhwar\OneDrive\Desktop\dhellep project\Harvest Hub\.next\server\chunks\ssr\OneDrive_Desktop_dhellep project_Harvest Hub_7a60afa5._.js:11:18141) {
+  digest: '1342232374'
+}
+Export encountered an error on /page: /, exiting the build.
+⨯ Next.js build worker exited with code: 1 and signal: null

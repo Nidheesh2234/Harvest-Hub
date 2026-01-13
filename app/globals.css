@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-accent-green-100: #dcfce7;
+  --color-accent-green-800: #166534;
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-display), ui-serif, Georgia;
+}
+
+@layer base {
+  :root {
+    --background: 45 30% 96%;
+    /* Earthy warm white */
+    --foreground: 145 60% 10%;
+    /* Deep forest green text */
+
+    --card: 45 30% 98%;
+    --card-foreground: 145 60% 10%;
+
+    --popover: 45 30% 98%;
+    --popover-foreground: 145 60% 10%;
+
+    --primary: 145 65% 25%;
+    /* Monsoon Green */
+    --primary-foreground: 45 40% 95%;
+
+    --secondary: 45 90% 45%;
+    /* Golden Harvest */
+    --secondary-foreground: 145 60% 10%;
+
+    --muted: 145 15% 90%;
+    --muted-foreground: 145 20% 40%;
+
+    --accent: 145 50% 40%;
+    /* Fresh Leaf */
+    --accent-foreground: 45 40% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 145 20% 85%;
+    --input: 145 20% 85%;
+    --ring: 145 65% 25%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 145 70% 3%;
+    /* Deepest forest */
+    --foreground: 45 20% 90%;
+    /* Warm white */
+
+    --card: 145 65% 5%;
+    --card-foreground: 45 20% 90%;
+
+    --popover: 145 65% 5%;
+    --popover-foreground: 45 20% 90%;
+
+    --primary: 145 60% 45%;
+    /* Brighter Green for dark mode */
+    --primary-foreground: 145 70% 5%;
+
+    --secondary: 45 90% 50%;
+    /* Golden Harvest */
+    --secondary-foreground: 145 70% 5%;
+
+    --muted: 145 40% 15%;
+    --muted-foreground: 145 20% 70%;
+
+    --accent: 145 50% 35%;
+    --accent-foreground: 45 20% 90%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 145 40% 15%;
+    --input: 145 40% 15%;
+    --ring: 145 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
